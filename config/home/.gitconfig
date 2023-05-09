@@ -1,0 +1,41 @@
+[user]
+	email = m.rezgui@outlook.fr
+	name = Malek Rezgui
+[includeIf "gitdir:~/Code/Work/"]
+    path = ~/.gitconfig_work
+[core]
+	excludesfile = ~/.gitignore_global
+	# editor = code --wait
+[alias]
+    br = branch
+    bra = branch -a
+    ci = commit
+    cm = commit -m
+    cmn = commit -n -m
+    co = checkout
+    d = diff
+    dt = difftool
+    dv = difftool -t vimdiff -y
+    gl = config --global -l
+    ignore = update-index --assume-unchanged
+    ignored = !git ls-files -v | grep "^[[:lower:]]"
+    last = log -1 HEAD --stat
+    lg = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    ll = log --oneline
+    oops = commit --amend --no-edit
+    rank = shortlog -sn --no-merges
+    rv = remote -v
+    se = !git rev-list --all | xargs git grep -F
+    st = status
+    todo = ! git grep --extended-regexp -I --line-number --break --heading --color=auto 'TODO|FIXME'
+    todo-list = ! git grep --extended-regexp -I --line-number --count 'TODO|FIXME'
+    unignore = update-index --no-assume-unchanged
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[push]
+	autoSetupRemote = true
+[init]
+	templatedir = ~/.git-templates
