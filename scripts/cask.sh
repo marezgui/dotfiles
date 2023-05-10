@@ -5,4 +5,4 @@ CONFIG_DIR="$ROOT_DIR/config"
 LIST="$CONFIG_DIR/brew/cask.list"
 
 echo "Installing cask via brew"
-cat $LIST | xargs brew install
+xargs brew install --cask < "$LIST"
