@@ -2,7 +2,7 @@
 	email = m.rezgui@outlook.fr
 	name = Malek Rezgui
 [core]
-	excludesfile = ~/.config/git/.gitignore
+	excludesfile = ~/.gitignore_global
 [alias]
     br = branch
     bra = branch -a
