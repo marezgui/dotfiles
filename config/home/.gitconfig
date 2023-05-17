@@ -1,6 +1,8 @@
 [user]
 	email = m.rezgui@outlook.fr
 	name = Malek Rezgui
+[includeIf "gitdir:~/Code/Work/"]
+    path = ~/.gitconfig_work
 [core]
 	excludesfile = ~/.gitignore_global
 [alias]
