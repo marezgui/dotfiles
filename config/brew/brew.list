@@ -2,7 +2,9 @@ defaultbrowser
 exa
 fzf
 gh
+mkcert
 node
+nss
 nvm
 pnpm
 pyenv
@@ -10,3 +12,4 @@ s3cmd
 shellcheck
 tldr
 tmux
+yarn
