@@ -2,6 +2,8 @@ defaultbrowser
 exa
 fzf
 gh
+glow
+graphviz
 mkcert
 node
 nss
@@ -12,4 +14,5 @@ s3cmd
 shellcheck
 tldr
 tmux
+tree
 yarn

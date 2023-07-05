@@ -23,6 +23,7 @@ alias yd="yarn dev"
 alias yl="yarn lint"
 alias yp="yarn preview"
 # Work
+alias catalog="cd ~/Code/Work/sch-front-newlook/packages/app-cdc-catalog"
 alias front="cd ~/Code/Work/sch-front-newlook"
 alias int="front && cd packages/app-cdc-catalog && yarn dev int-cdc"
 alias prod="front && cd packages/app-cdc-catalog && yarn dev production-cdc"

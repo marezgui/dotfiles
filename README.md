@@ -3,11 +3,11 @@
 ## How to get started
 
 ```sh
-sh dotfiles home
-sh dotfiles zsh
-sh dotfiles brew
-sh dotfiles cask
-sh dotfiles mac
+sh dotfiles.sh mac
+sh dotfiles.sh zsh
+sh dotfiles.sh home
+sh dotfiles.sh brew
+sh dotfiles.sh cask
 ```
 
 ## What's included

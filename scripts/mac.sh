@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Keyboard
+echo "Set a blazingly fast keyboard repeat rate"
+defaults write NSGlobalDomain KeyRepeat -int 1
+
+echo "Set a shorter Delay until key repeat"
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+# Finder
 echo "Finder: show all filename extensions"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
@@ -15,12 +23,7 @@ defaults write com.apple.finder ShowStatusBar -bool true
 echo "Keep folder on top"
 defaults write com.apple.finder "_FXSortFoldersFirst" -bool "true"
 
-echo "Set a blazingly fast keyboard repeat rate"
-defaults write NSGlobalDomain KeyRepeat -int 1
-
-echo "Set a shorter Delay until key repeat"
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
-
+# Dock
 echo "Set Dock position to left"
 defaults write com.apple.dock "orientation" -string "left"
 
@@ -37,9 +40,11 @@ echo "Speed up dock show/hide"
 defaults write com.apple.dock autohide-delay -float 0;
 defaults write com.apple.dock autohide-time-modifier -int 0;
 
+# System
 echo "Update Apple developer utils"
 softwareupdate --all --install --force
 
+# Restart
 killall SystemUIServer
 killall Dock
 killall Finder
