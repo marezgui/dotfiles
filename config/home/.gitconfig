@@ -29,6 +29,7 @@
     st = status
     todo = ! git grep --extended-regexp -I --line-number --break --heading --color=auto 'TODO|FIXME'
     todo-list = ! git grep --extended-regexp -I --line-number --count 'TODO|FIXME'
+    undo = reset --soft HEAD^
     unignore = update-index --no-assume-unchanged
 [filter "lfs"]
 	clean = git-lfs clean -- %f

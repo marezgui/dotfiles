@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Mouse
+defaults write NSGlobalDomain com.apple.mouse.scaling -float "2.5"
+
 # Keyboard
 echo "Set a blazingly fast keyboard repeat rate"
 defaults write NSGlobalDomain KeyRepeat -int 1
@@ -45,7 +48,6 @@ echo "Update Apple developer utils"
 softwareupdate --all --install --force
 
 # Manual
-# - Change the trackpad speed
 # - Disable mission control auto rearrange
 # - Key Reapeat Rate to Fast & delay to Short
 # - Tap to click on trackpad
