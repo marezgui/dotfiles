@@ -42,15 +42,4 @@ alias yp="yarn preview"
 alias t="tmux"
 
 # Work
-alias catalog="cd ~/Code/Work/sch-front-newlook/packages/app-cdc-catalog-v2"
-alias front="cd ~/Code/Work/sch-front-newlook"
-alias graph="cd ~/Code/Work/sch-customer-experience-graph"
-alias proxy="front && yarn start:proxy:cdc"
-alias test="cd ~/Code/Work/sch-30-avenue-montest"
-
-alias dev="front && cd packages/app-cdc-catalog-v2 && yarn dev dev-cdc --inspect"
-alias fat="front && cd packages/app-cdc-catalog-v2 && yarn dev fat-cdc --inspect"
-alias hprod="front && cd packages/app-cdc-catalog-v2 && yarn dev hidden-production-cdc --inspect"
-alias preprod="front && cd packages/app-cdc-catalog-v2 && yarn dev preprod-cdc --inspect"
-alias prod="front && cd packages/app-cdc-catalog-v2 && yarn dev production-cdc --inspect"
-alias uat="front && cd packages/app-cdc-catalog-v2 && yarn dev uat-cdc --inspect"
+alias work="cd ~/Code/Work"
