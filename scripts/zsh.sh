@@ -3,7 +3,7 @@
 ROOT_DIR="$1"
 CONFIG_DIR="$ROOT_DIR/config"
 
-source "$ROOT_DIR/utils.sh"
+source "${ROOT_DIR}/utils.sh"
 
 #
 # Oh-my-zsh installation
@@ -24,7 +24,7 @@ RUNZSH=no KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/o
 
 FROM_DIR="$CONFIG_DIR/oh-my-zsh"
 TARGET_DIR=~/.oh-my-zsh/custom/
-symlink_files "$FROM_DIR/*" "$TARGET_DIR"
+symlink_files "$FROM_DIR"/* "$TARGET_DIR"
 
 echo "Installing alias-tips"
 git clone https://github.com/djui/alias-tips.git ~/.oh-my-zsh/custom/plugins/alias-tips
