@@ -11,6 +11,10 @@ echo "Set a shorter Delay until key repeat"
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Finder
+
+echo "Finder: Column view"
+defaults write com.apple.finder "FXPreferredViewStyle" -string "clmv"
+
 echo "Finder: show all filename extensions"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
@@ -27,6 +31,9 @@ echo "Keep folder on top"
 defaults write com.apple.finder "_FXSortFoldersFirst" -bool "true"
 
 # Dock
+echo "Set the icon size of Dock items in pixels."
+defaults write com.apple.dock "tilesize" -int "16"
+
 echo "Set Dock position to left"
 defaults write com.apple.dock "orientation" -string "left"
 
