@@ -1,13 +1,18 @@
 # Malek's dotfiles
 
-## How to get started
+## Prerequisites
 
+- Install [homebrew](https://brew.sh)
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+## Setup
 ```sh
 sh dotfiles.sh mac
 sh dotfiles.sh zsh
 sh dotfiles.sh home
 sh dotfiles.sh brew
-sh dotfiles.sh cask
 ```
 
 ## What's included

@@ -8,7 +8,7 @@ SCRIPTS_DIR="$ROOT_DIR/scripts"
 
 # Check for valid arguments
 if [ $# -ne 1 ]; then
-    echo "Usage: $0 [mac|home|zsh|brew|cask]"
+    echo "Usage: $0 [mac|home|zsh|brew]"
     exit 1
 fi
 
@@ -20,11 +20,10 @@ case "$1" in
    ;;
    "zsh") bash "$SCRIPTS_DIR/zsh.sh" "$ROOT_DIR"
    ;;
-   "brew") bash "$SCRIPTS_DIR/brew.sh" "$ROOT_DIR"
+   "brew") echo "Installing packages via brew bundle"
+           brew bundle --file="$ROOT_DIR/Brewfile"
    ;;
-   "cask") bash "$SCRIPTS_DIR/cask.sh" "$ROOT_DIR"
-   ;;
-   *) echo "Invalid argument: $1. Use one of the following options: mac, home, zsh, brew, cask."
+   *) echo "Invalid argument: $1. Use one of the following options: mac, home, zsh, brew."
       exit 1
    ;;
 esac
